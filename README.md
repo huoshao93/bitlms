@@ -1,3 +1,2 @@
 # bitlms
-Learning Management System
-BITSPUR
+Learning Management System By BITSPUR
