@@ -3,3 +3,6 @@ src/static/node_modules
 src/static/bower_components
 .settings
 /.project
+src/static/dist
+src/static/bower.json
+src/static/package.json
