@@ -7,15 +7,15 @@
                 $urlRouterProvider.otherwise('/website-pages/home');
 
                 $stateProvider
-                    .state('website-tutors', {
+                    .state('website-instructor', {
                         abstract: true,
-                        url: '/website-tutuos',
+                        url: '/website-instructor',
                         template: '<div ui-view class="ui-view-main" />'
                     })
-                    .state('website-tutors.all',
+                    .state('website-instructor.all',
 							{
 								url : '/all',
-								templateUrl : 'website/tutors.html',
+								templateUrl : 'website/instructors.html',
 								controller : [
 										'$scope','$rootScope',
 										function($scope,$rootScope) {
@@ -23,5 +23,16 @@
 											$scope.app.settings.bodyClass = '';
 										} ]
 							})		
+					.state('website-instructor.public-profile',
+							{
+								url : '/pubprof',
+								templateUrl : 'website/instructor-pubprof.html',
+								controller : [
+										'$scope','$rootScope',
+										function($scope,$rootScope) {
+											$scope.app.settings.htmlClass = $rootScope.htmlClass.website;
+											$scope.app.settings.bodyClass = '';
+										} ]
+							});
             });
 })();
