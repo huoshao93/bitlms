@@ -19,25 +19,41 @@ data-z="0" data-animated role="navigation" data-ng-controller="navBarCtrl">
 
 			<ul class="nav navbar-nav navbar-nav-margin-left">
 				<li class="dropdown" ng-class="{ 'active': $state.includes('website-pages.home') }">
-					<a ui-sref="website-pages.home" class="dropdown-toggle" data-toggle="dropdown"> 
-						<span class="ink animate" style="height: 78px; width: 78px; left: 10.1667px;"></span><i class="fa fa-home"></i> 
-				    Home</a>
+					<a ui-sref="website-pages.home" class="dropdown-toggle" data-toggle="dropdown"> <span class="ink animate" style="height: 78px; width: 78px; left: 10.1667px;"></span><i class="fa fa-home"></i> Home</a>
 				</li>
 
-				<li class="dropdown" ng-class="{ 'active': $state.includes('website-tutors') }">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutors <span class="caret"></span></a>
+				<li class="dropdown" ng-class="{ 'active': $state.includes('website-program') }">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li ui-sref-active="active">
-							<a ui-sref="website-tutors.all">Java Tutors</a>
+							<a ui-sref="website-program.javadev">Full Stack Java Developer</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="#">Front End Developer</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="#">Big Data Developer</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="#">Mobile Developer</a>
 						</li>
 					</ul>
 				</li>
 
-				<li class="dropdown" ng-class="{ 'active': $state.includes('website-courses') }">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs <span class="caret"></span></a>
+				<li class="dropdown" ng-class="{ 'active': $state.includes('website-instructor') }">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutors <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li ui-sref-active="active">
-							<a ui-sref="website-courses.grid">Java Developer</a>
+							<a ui-sref="website-instructor.all">Java Tutors</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="#">Front End Tutors</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="#">Data Engineering Tutors</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="#">Mobile Development Tutors</a>
 						</li>
 					</ul>
 				</li>
@@ -106,8 +122,7 @@ data-z="0" data-animated role="navigation" data-ng-controller="navBarCtrl">
 				<ul class="nav navbar-nav navbar-nav-bordered navbar-nav-margin-right">
 					<!-- user -->
 					<li class="dropdown user{% if page.slug|contains('app-student-') %} active{% endif %}">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <!--<img src="images/people/110/guy-6.jpg" alt="" class="img-circle"/>-->
-							 ::user.name::<span class="caret"></span> </a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <!--<img src="images/people/110/guy-6.jpg" alt="" class="img-circle"/>--> ::user.name::<span class="caret"></span> </a>
 						<ul class="dropdown-menu" role="menu">
 							<li ui-sref-active="active">
 								<a ui-sref="app-student.dashboard"><i class="fa fa-bar-chart-o"></i> Dashboard</a>

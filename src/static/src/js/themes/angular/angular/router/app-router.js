@@ -36,6 +36,14 @@
 						$scope.app.settings.htmlClass = $rootScope.htmlClass.websiteLogin;
 						$scope.app.settings.bodyClass = 'login';
 					} ]
+				})
+				.state('apply-online', {
+					url : '/apply-online',
+					templateUrl : 'website/apply-online.html',
+					controller : [ '$scope','$rootScope', function($scope,$rootScope) {
+						$scope.app.settings.htmlClass = $rootScope.htmlClass.websiteSurvey;
+						$scope.app.settings.bodyClass = 'survey';
+					} ]
 				});
 			});
 

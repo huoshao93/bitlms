@@ -32,13 +32,13 @@ require('./angular/directives/flotchart-earnings');
  */
 // Router config
 require('./angular/router/app-router');
-require('./angular/router/home-router');
-require('./angular/router/student-router');
-require('./angular/router/instructor-router');
-require('./angular/router/website-tutor-router');
-require('./angular/router/course-router');
-require('./angular/router/forum-router');
-require('./angular/router/blog-router');
+require('./angular/router/home-page-router');
+require('./angular/router/student-app-router');
+require('./angular/router/instructor-web-router');
+require('./angular/router/instructor-app-router');
+require('./angular/router/program-web-router');
+require('./angular/router/forum-web-router');
+require('./angular/router/blog-web-router');
 
 // Customer Controllers
 require('./angular/controllers/app-ctrl');

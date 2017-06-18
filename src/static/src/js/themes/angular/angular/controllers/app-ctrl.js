@@ -18,7 +18,7 @@
   app.controller('navBarCtrl', 
                 function ($scope, $state) {
                     $scope.user = {
-                    		name:'Bill Gates2'
+                    		name:'Bill Gates'
                     };
                 } );
 
