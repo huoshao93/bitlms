@@ -1,16 +1,12 @@
 <div class="row" data-toggle="isotope">
     <div class="item col-xs-12 col-sm-6 col-lg-4">
         {% include "src/html/themes/angular/html/courses/_listing-grid-widget.html" {
-        coverBg: "bg-default",
-        coverIcon: "fa-github",
-        coverBtn: "btn-white",
-        coverHeight: "height-100", 
-        itemTitle: "Book Title 11",
+        itemTitle: "Course title",
         itemLabel: "bg-gray-dark",
-        itemRating: true,
-        itemMeta: true,
-        itemMeta2: true,
-        itemTags: true,
+        itemRating: false,
+        
+        
+        itemTags: false,
         itemDescription: true,
         itemUrl: itemUrl,
         lessonsBar: "progress-bar-grey-600" } %}
@@ -24,10 +20,10 @@
         itemTitle: "Awesome CSS with LESS Processing",
         itemLabel: "label-primary",
         itemRating: false,
-        itemMeta: false,
-        itemMeta2: false,
+        
+        
         itemTags: false,
-        itemDescription: false,
+        itemDescription: true,
         itemUrl: itemUrl,
         lessonsBar: "progress-bar-blue-300" } %}
     </div>
@@ -40,10 +36,10 @@
         itemTitle: "Vagrant Portable Environments",
         itemLabel: "bg-lightred",
         itemRating: false,
-        itemMeta: false,
-        itemMeta2: false,
+        
+        
         itemTags: false,
-        itemDescription: false,
+        itemDescription: true,
         itemUrl: itemUrl,
         lessonsBar: "progress-bar-red-300" } %}
     </div>
@@ -56,10 +52,10 @@
         itemTitle: "WordPress Theme Development",
         itemLabel: "bg-brown",
         itemRating: false,
-        itemMeta: false,
-        itemMeta2: false,
+        
+        
         itemTags: false,
-        itemDescription: false,
+        itemDescription: true,
         itemUrl: itemUrl,
         lessonsBar: "progress-bar-orange-300"  } %}
     </div>
@@ -69,13 +65,13 @@
         coverIcon: "fa-jsfiddle",
         coverBtn: "btn-purple-500",
         coverHeight: "height-100",
-        itemTitle: "Browserify: Writing Modular JavaScript",
+        itemTitle: "Writing Modular JavaScript",
         itemLabel: "bg-purple",
         itemRating: false,
-        itemMeta: false,
-        itemMeta2: false,
+        
+        
         itemTags: false,
-        itemDescription: false,
+        itemDescription: true,
         itemUrl: itemUrl,
         lessonsBar: "progress-bar-deep-purple-300"  } %}
     </div>
@@ -88,13 +84,11 @@
         itemTitle: "Online Payments with Stripe",
         itemLabel: "bg-pink-400",
         itemRating: false,
-        itemMeta: false,
-        itemMeta2: false,
+        
+        
         itemTags: false,
-        itemDescription: false,
+        itemDescription: true,
         itemUrl: itemUrl,
         lessonsBar: "progress-bar-pink-300" } %}
     </div>
 </div>
-
-{% include "src/html/themes/angular/html/_pagination.html" %}

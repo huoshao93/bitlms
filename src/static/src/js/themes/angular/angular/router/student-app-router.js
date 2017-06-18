@@ -43,25 +43,9 @@
                 $scope.app.settings.bodyClass = '';
             }]
         })
-        .state('app-student.courses', {
-            url: '/courses',
+        .state('app-student.program-javadev', {
+            url: '/program-javadev',
             templateUrl: 'app/student-courses.html',
-            controller: ['$scope','$rootScope', function($scope,$rootScope){
-                $scope.app.settings.htmlClass = $rootScope.htmlClass.appl1r3;
-                $scope.app.settings.bodyClass = '';
-            }]
-        })
-        .state('app-student.course-forums', {
-            url: '/course-forums',
-            templateUrl: 'app/student-course-forums.html',
-            controller: ['$scope','$rootScope', function($scope,$rootScope){
-                $scope.app.settings.htmlClass = $rootScope.htmlClass.appl1r3;
-                $scope.app.settings.bodyClass = '';
-            }]
-        })
-        .state('app-student.course-forum-thread', {
-            url: '/course-forum-thread',
-            templateUrl: 'app/student-course-forum-thread.html',
             controller: ['$scope','$rootScope', function($scope,$rootScope){
                 $scope.app.settings.htmlClass = $rootScope.htmlClass.appl1r3;
                 $scope.app.settings.bodyClass = '';

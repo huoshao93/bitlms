@@ -37,7 +37,7 @@ require('./angular/router/student-app-router');
 require('./angular/router/instructor-web-router');
 require('./angular/router/instructor-app-router');
 require('./angular/router/program-web-router');
-require('./angular/router/forum-web-router');
+require('./angular/router/forum-app-router');
 require('./angular/router/blog-web-router');
 
 // Customer Controllers
