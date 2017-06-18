@@ -3,8 +3,12 @@
 
     <!-- Tabs -->
     <ul class="nav nav-tabs">
-        <li{% if page.slug|contains('-profile') %} class="active"{% endif %}{% if angular %} ui-sref-active="active"{% endif %}><a{% if angular %} ui-sref="{{ slug or 'app' }}-{{ account or 'student' }}.private-profile"{% else %} href="{{ slug or 'app' }}-{{ account or 'student' }}-profile.html"{% endif %}><i class="fa fa-fw fa-lock"></i> <span class="hidden-sm hidden-xs">Manage Account</span></a></li>
-        <li{% if page.slug|contains('-billing') %} class="active"{% endif %}{% if angular %} ui-sref-active="active"{% endif %}><a{% if angular %} ui-sref="{{ slug or 'app' }}-{{ account or 'student' }}.billing"{% else %} href="{{ slug or 'app' }}-{{ account or 'student' }}-billing.html"{% endif %}><i class="fa fa-fw fa-credit-card"></i> <span class="hidden-sm hidden-xs">Billing Details</span></a></li>
+        <li{% if page.slug|contains('-profile') %} class="active"{% endif %}{% if angular %} ui-sref-active="active"{% endif %}>
+        	<a ui-sref="app-student.private-profile"><i class="fa fa-fw fa-pencil"></i> <span class="hidden-sm hidden-xs">Manage Account</span></a></li>
+        <li{% if page.slug|contains('-billing') %} class="active"{% endif %}{% if angular %} ui-sref-active="active"{% endif %}>
+        	<a ui-sref="app-student.billing"><i class="fa fa-fw fa-credit-card"></i> <span class="hidden-sm hidden-xs">Billing Details</span></a></li>
+        <li{% if page.slug|contains('-changepass') %} class="active"{% endif %}{% if angular %} ui-sref-active="active"{% endif %}>
+        <a ui-sref="app-student.changepass"><i class="fa fa-fw fa-lock"></i> <span class="hidden-sm hidden-xs">Change Password</span></a></li>
     </ul>
     <!-- // END Tabs -->
 
@@ -20,6 +24,12 @@
         {% if tab == 'billing' %}
         <div id="billing" class="tab-pane active">
             {% include "src/html/themes/angular/html/account/_billing.html" %}
+        </div>
+        {% endif %}
+        
+        {% if tab == 'changepass' %}
+        <div id="billing" class="tab-pane active">
+            {% include "src/html/themes/angular/html/account/_changepass.html" %}
         </div>
         {% endif %}
 

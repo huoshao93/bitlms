@@ -23,9 +23,11 @@
 
             <li class="hasSubmenu" ng-class="{ 'active open': $state.is('app-student.private-profile') || $state.is('app-student.billing') }">
                 <a href="#account-menu"><i class="fa fa-user"></i><span>Account</span></a>
-                <ul id="account-menu" ng-class="{ 'in': $state.is('app-student.private-profile') || $state.is('app-student.billing') }">
+                <ul id="account-menu" ng-class="{ 'in': $state.is('app-student.private-profile') || $state.is('app-student.billing') || 
+                	$state.is('app-student.changepass') }">
                     <li ui-sref-active="active"><a ui-sref="app-student.private-profile"><span>Edit Profile</span></a></li>
                     <li ui-sref-active="active"><a ui-sref="app-student.billing"><span>Edit Billing</span></a></li>
+                    <li ui-sref-active="active"><a ui-sref="app-student.changepass"><span>Change Password</span></a></li>
                 </ul>
             </li>
             <li ui-sref-active="active"><a ui-sref="app-student.messages"><i class="fa fa-comments"></i><span>Messages</span></a></li>

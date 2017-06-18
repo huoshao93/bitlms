@@ -43,6 +43,14 @@
                 $scope.app.settings.bodyClass = '';
             }]
         })
+        .state('app-student.changepass', {
+            url: '/changepass',
+            templateUrl: 'app/student-changepass.html',
+            controller: ['$scope','$rootScope', function($scope,$rootScope){
+                $scope.app.settings.htmlClass = $rootScope.htmlClass.appl3;
+                $scope.app.settings.bodyClass = '';
+            }]
+        })
         .state('app-student.program-javadev', {
             url: '/program-javadev',
             templateUrl: 'app/student-courses.html',

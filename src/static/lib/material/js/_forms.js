@@ -3,12 +3,12 @@
 
     $.fn.tkFormControlMaterial = function(){
         this
-            .blur(function () {
-                if (this.val())
-                    this.addClass('used');
-                else
-                    this.removeClass('used');
-            })
+//            .blur(function () {
+//                if (this.val())
+//                    this.addClass('used');
+//                else
+//                    this.removeClass('used');
+//            })
             .after('<span class="ma-form-highlight"></span><span class="ma-form-bar"></span>');
     };
 
