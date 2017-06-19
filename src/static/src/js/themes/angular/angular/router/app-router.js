@@ -45,6 +45,71 @@
 						$scope.app.settings.bodyClass = 'survey';
 					} ]
 				});
+				
+				$stateProvider
+			     .state('essential', {
+			         abstract: true,
+			         url: '/essential',
+			         template: '<div ui-view class="ui-view-main" />'
+			     })
+			     .state('essential.buttons', {
+			         url: '/buttons',
+			         templateUrl: 'essential/buttons.html',
+			         controller: ['$scope', '$rootScope', function($scope, $rootScope){
+			             $scope.app.settings.htmlClass = $rootScope.htmlClass.website;
+			             $scope.app.settings.bodyClass = '';
+			         }]
+			     })
+			     .state('essential.icons', {
+			         url: '/icons',
+			         templateUrl: 'essential/icons.html',
+			         controller: ['$scope', '$rootScope', function($scope, $rootScope){
+			             $scope.app.settings.htmlClass = $rootScope.htmlClass.website;
+			             $scope.app.settings.bodyClass = '';
+			         }]
+			     })
+			     .state('essential.progress', {
+			         url: '/progress',
+			         templateUrl: 'essential/progress.html',
+			         controller: ['$scope', '$rootScope', function($scope, $rootScope){
+			             $scope.app.settings.htmlClass = $rootScope.htmlClass.website;
+			             $scope.app.settings.bodyClass = '';
+			         }]
+			     })
+			     .state('essential.grid', {
+			         url: '/grid',
+			         templateUrl: 'essential/grid.html',
+			         controller: ['$scope', '$rootScope', function($scope, $rootScope){
+			             $scope.app.settings.htmlClass = $rootScope.htmlClass.website;
+			             $scope.app.settings.bodyClass = '';
+			         }]
+			     })
+			     .state('essential.forms', {
+			         url: '/forms',
+			         templateUrl: 'essential/forms.html',
+			         controller: ['$scope', '$rootScope', function($scope, $rootScope){
+			             $scope.app.settings.htmlClass = $rootScope.htmlClass.website;
+			             $scope.app.settings.bodyClass = '';
+			         }]
+			     })
+			     .state('essential.tables', {
+			         url: '/tables',
+			         templateUrl: 'essential/tables.html',
+			         controller: ['$scope', '$rootScope', function($scope, $rootScope){
+			             $scope.app.settings.htmlClass = $rootScope.htmlClass.website;
+			             $scope.app.settings.bodyClass = '';
+			         }]
+			     })
+			     .state('essential.tabs', {
+			         url: '/tabs',
+			         templateUrl: 'essential/tabs.html',
+			         controller: ['$scope', '$rootScope', function($scope, $rootScope){
+			             $scope.app.settings.htmlClass = $rootScope.htmlClass.website;
+			             $scope.app.settings.bodyClass = '';
+			         }]
+			     });
 			});
+	
+	 
 
 })();

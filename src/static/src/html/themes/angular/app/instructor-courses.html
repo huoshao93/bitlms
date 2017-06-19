@@ -1,11 +1,10 @@
 {% extends "src/html/themes/angular/app/_layout-instructor.html" %}
 
 {% block content %}
-
-	<div class="page-section">
-		<h1 class="text-display-1">My Courses</h1>
-	</div>
-
-    {% include "src/html/themes/angular/html/instructor/_my-courses.html" { itemUrl: 'app-instructor.edit-course' } %}
+<div class="page-section">
+	<h1 class="text-display-1">My Courses</h1>
+	<a class="btn btn-danger" ui-sref="app-instructor.edit-course">NEW</a>
+</div>
+{% include "src/html/themes/angular/html/instructor/_my-courses.html" { itemUrl: 'app-instructor.edit-course' } %}
 
 {% endblock %}

@@ -19,6 +19,22 @@
                  $scope.app.settings.bodyClass = '';
              }]
          })
+         .state('app-instructor.classes', {
+             url: '/classes',
+             templateUrl: 'app/instructor-classes.html',
+             controller: ['$scope','$rootScope', function($scope, $rootScope){
+                 $scope.app.settings.htmlClass = $rootScope.htmlClass.appl3;
+                 $scope.app.settings.bodyClass = '';
+             }]
+         })
+         .state('app-instructor.programs', {
+             url: '/programs',
+             templateUrl: 'app/instructor-programs.html',
+             controller: ['$scope','$rootScope', function($scope, $rootScope){
+                 $scope.app.settings.htmlClass = $rootScope.htmlClass.appl3;
+                 $scope.app.settings.bodyClass = '';
+             }]
+         })
          .state('app-instructor.courses', {
              url: '/courses',
              templateUrl: 'app/instructor-courses.html',
@@ -46,6 +62,14 @@
          .state('app-instructor.edit-course-lessons', {
              url: '/edit-course-lessons',
              templateUrl: 'app/instructor-edit-course-lessons.html',
+             controller: ['$scope','$rootScope', function($scope, $rootScope){
+                 $scope.app.settings.htmlClass = $rootScope.htmlClass.appl3;
+                 $scope.app.settings.bodyClass = '';
+             }]
+         })
+         .state('app-instructor.edit-course-lesson', {
+             url: '/edit-course-lesson',
+             templateUrl: 'app/instructor-edit-course-lesson.html',
              controller: ['$scope','$rootScope', function($scope, $rootScope){
                  $scope.app.settings.htmlClass = $rootScope.htmlClass.appl3;
                  $scope.app.settings.bodyClass = '';
@@ -83,14 +107,14 @@
                  $scope.app.settings.bodyClass = '';
              }]
          })
-         .state('app-instructor.billing', {
-             url: '/billing',
-             templateUrl: 'app/instructor-billing.html',
-             controller: ['$scope','$rootScope', function($scope, $rootScope){
-                 $scope.app.settings.htmlClass = $rootScope.htmlClass.appl3;
-                 $scope.app.settings.bodyClass = '';
-             }]
-         });
+         .state('app-instructor.changepass', {
+            url: '/changepass',
+            templateUrl: 'app/instructor-changepass.html',
+            controller: ['$scope','$rootScope', function($scope,$rootScope){
+                $scope.app.settings.htmlClass = $rootScope.htmlClass.appl3;
+                $scope.app.settings.bodyClass = '';
+            }]
+        });
 	});
 
 })();

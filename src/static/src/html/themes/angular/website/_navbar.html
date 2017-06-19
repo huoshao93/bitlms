@@ -104,19 +104,33 @@ data-z="0" data-animated role="navigation" data-ng-controller="navBarCtrl">
 				<li ui-sref-active="active"><a ui-sref="app-instructor.messages">Messages</a></li>
 				<li ng-class="{ 'active' : $state.is('app-instructor.private-profile') || $state.is('app-instructor.billing') }"><a ui-sref="app-instructor.private-profile">Private Profile</a></li>
 				</ul>
-				</li>
-				<li class="dropdown" ng-class="{ 'active': $state.includes('essential') }">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">UI <span class="caret"></span></a>
-				<ul class="dropdown-menu">
-				<li ui-sref-active="active"><a ui-sref="essential.buttons">Buttons</a></li>
-				<li ui-sref-active="active"><a ui-sref="essential.icons">Icons</a></li>
-				<li ui-sref-active="active"><a ui-sref="essential.progress">Progress</a></li>
-				<li ui-sref-active="active"><a ui-sref="essential.grid">Grid</a></li>
-				<li ui-sref-active="active"><a ui-sref="essential.forms">Forms</a></li>
-				<li ui-sref-active="active"><a ui-sref="essential.tables">Tables</a></li>
-				<li ui-sref-active="active"><a ui-sref="essential.tabs">Tabs</a></li>
-				</ul>
 				</li>-->
+				<li class="dropdown" ng-class="{ 'active': $state.includes('essential') }">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">UI <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li ui-sref-active="active">
+							<a ui-sref="essential.buttons">Buttons</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="essential.icons">Icons</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="essential.progress">Progress</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="essential.grid">Grid</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="essential.forms">Forms</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="essential.tables">Tables</a>
+						</li>
+						<li ui-sref-active="active">
+							<a ui-sref="essential.tabs">Tabs</a>
+						</li>
+					</ul>
+				</li>
 			</ul>
 			<div class="navbar-right">
 				<ul class="nav navbar-nav navbar-nav-bordered navbar-nav-margin-right">
@@ -125,7 +139,10 @@ data-z="0" data-animated role="navigation" data-ng-controller="navBarCtrl">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <!--<img src="images/people/110/guy-6.jpg" alt="" class="img-circle"/>--> ::user.name::<span class="caret"></span> </a>
 						<ul class="dropdown-menu" role="menu">
 							<li ui-sref-active="active">
-								<a ui-sref="app-student.dashboard"><i class="fa fa-bar-chart-o"></i> Dashboard</a>
+								<a ui-sref="app-student.dashboard"><i class="fa fa-bar-chart-o"></i> Student Dashboard</a>
+							</li>
+							<li ui-sref-active="active">
+								<a ui-sref="app-instructor.dashboard"><i class="fa fa-bar-chart-o"></i> Instructor Dashboard</a>
 							</li>
 							<li ui-sref-active="active">
 								<a ui-sref="app-student.courses"><i class="fa fa-mortar-board"></i> My Courses</a>

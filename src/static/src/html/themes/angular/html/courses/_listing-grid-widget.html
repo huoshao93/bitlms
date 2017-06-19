@@ -27,7 +27,7 @@
         {% endif %}
        
         {% if itemButton !== false %}
-        <a class="btn btn-success btn-flat paper-shadow relative" data-z="0" data-hover-z="1" data-animated{% if angular %} ui-sref="{{ itemUrl or 'website-courses.single' }}"{% else %} href="{{ itemUrl or 'website-course.html' }}"{% endif %}>{% if itemButtonIcon %}<i class="fa fa-fw {{ itemButtonIcon }}"></i> {% endif %}{{ itemButtonText or 'Go to course' }}</a>
+        <a class="btn btn-default btn-flat paper-shadow relative" data-z="0" data-hover-z="1" data-animated{% if angular %} ui-sref="{{ itemUrl or 'website-courses.single' }}"{% else %} href="{{ itemUrl or 'website-course.html' }}"{% endif %}>{% if itemButtonIcon %}<i class="fa fa-fw {{ itemButtonIcon }}"></i> {% endif %}{{ itemButtonText or 'Go to course' }}</a>
         {% endif %}
     </div>
     {% endif %}

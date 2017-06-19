@@ -1,0 +1,32 @@
+<!-- Tabbable Widget -->
+<div class="tabbable paper-shadow relative" data-z="0.5">
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs">
+        <li{% if page.slug|contains('-profile') %} class="active"{% endif %}{% if angular %} ui-sref-active="active"{% endif %}>
+        	<a ui-sref="app-instructor.private-profile"><i class="fa fa-fw fa-pencil"></i> <span class="hidden-sm hidden-xs">Manage Account</span></a></li>      
+        <li{% if page.slug|contains('-changepass') %} class="active"{% endif %}{% if angular %} ui-sref-active="active"{% endif %}>
+        <a ui-sref="app-instructor.changepass"><i class="fa fa-fw fa-lock"></i> <span class="hidden-sm hidden-xs">Change Password</span></a></li>
+    </ul>
+    <!-- // END Tabs -->
+
+    <!-- Panes -->
+    <div class="tab-content">
+
+        {% if tab == 'profile' %}
+        <div id="account" class="tab-pane active">
+            {% include "src/html/themes/angular/html/account/_profile.html" %}
+        </div>
+        {% endif %}
+        
+        {% if tab == 'changepass' %}
+        <div id="changepass" class="tab-pane active">
+            {% include "src/html/themes/angular/html/account/_changepass.html" %}
+        </div>
+        {% endif %}
+
+    </div>
+    <!-- // END Panes -->
+
+</div>
+<!-- // END Tabbable Widget -->

@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
             </button>
             <div class="navbar-brand {{ navbarBrand or 'navbar-brand-primary' }} navbar-brand-logo navbar-nav-padding-left">
-                <a class="svg" ui-sref="app-student.dashboard">{% include "src/html/themes/angular/html/_logo.html" %}</a>
+                <a class="svg" ui-sref="website-pages.home">{% include "src/html/themes/angular/html/_logo.html" %}</a>
             </div>
         </div>
 
@@ -35,8 +35,8 @@
                         Bill <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" role="menu">
-                        <li ui-sref-active="active"><a ui-sref="app-student.private-profile">Account</a></li>
-                        <li ui-sref-active="active"><a ui-sref="app-student.billing">Billing</a></li>
+                        <li ui-sref-active="active"><a ui-sref="app-student.private-profile">Student Account</a></li>
+                        <li ui-sref-active="active"><a ui-sref="app-instructor.private-profile">Instructor Account</a></li>
                         <li><a ui-sref="login">Logout</a></li>
                     </ul>
                 </li>
