@@ -40,6 +40,9 @@ require('./angular/router/program-web-router');
 require('./angular/router/forum-app-router');
 require('./angular/router/blog-web-router');
 
+//Services
+require('./angular/services/services');
+
 // Customer Controllers
 require('./angular/controllers/app-ctrl');
 require('./angular/controllers/home-ctrl');
