@@ -15,7 +15,8 @@
 	});
 
 	app.controller('navBarCtrl', function($scope, $state, UserService) {
-		UserService.get({ "id": 'Bill' },function(res) {
+		UserService.get({ "id": '1' },function(res) {
+			console.log("regis: " + res);
 			$scope.user = res;
 		}, function(error) {
 			console.log("get all tutors fail: " + error);
