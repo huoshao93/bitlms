@@ -1,4 +1,4 @@
 {
 	"html": "dist",
-	"angular": "dist"
+	"angular": "../main/resources"
 }

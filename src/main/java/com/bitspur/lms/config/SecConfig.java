@@ -28,8 +28,8 @@ public class SecConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.csrf().disable().authorizeRequests().antMatchers("/v1/secured/**").authenticated().anyRequest().permitAll()
-				.and().formLogin().loginPage("/login").permitAll();
+		http.csrf().disable().authorizeRequests().antMatchers("/api/secured/**").authenticated().anyRequest()
+				.permitAll().and().formLogin().loginPage("/login").permitAll();
 	};
 
 	@Bean

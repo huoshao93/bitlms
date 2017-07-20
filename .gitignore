@@ -8,3 +8,4 @@ src/static/bower.json
 src/static/package.json
 src/static/bower_components
 src/static/node_modules
+src/main/resources/angular
